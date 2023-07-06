@@ -1,0 +1,186 @@
+{
+  "companies": [
+    {
+      "id": 1,
+      "name": "ACME Corporation",
+      "responsibility": "Accounting and Finance"
+    },
+    {
+      "id": 2,
+      "name": "Globex Industries",
+      "responsibility": "Tax Compliance"
+    },
+    {
+      "id": 3,
+      "name": "Innovate Solutions",
+      "responsibility": "Auditing Services"
+    },
+    {
+      "id": 4,
+      "name": "Vertex Consulting",
+      "responsibility": "Financial Advisory"
+    },
+    {
+      "id": 5,
+      "name": "Summit Accountants",
+      "responsibility": "Bookkeeping Services"
+    },
+    {
+      "id": 6,
+      "name": "ProActive Accounting",
+      "responsibility": "Payroll Management"
+    },
+    {
+      "id": 7,
+      "name": "Eagle Financials",
+      "responsibility": "Budget Planning"
+    },
+    {
+      "id": 8,
+      "name": "Spectrum Advisors",
+      "responsibility": "Risk Management"
+    },
+    {
+      "id": 9,
+      "name": "Dynamic Investments",
+      "responsibility": "Investment Analysis"
+    },
+    {
+      "id": 10,
+      "name": "Nova CPA Firm",
+      "responsibility": "Financial Reporting"
+    },
+    {
+      "id": 11,
+      "name": "Pinnacle Tax Services",
+      "responsibility": "Tax Planning"
+    },
+    {
+      "id": 12,
+      "name": "Harmony Financial",
+      "responsibility": "Estate Planning"
+    },
+    {
+      "id": 13,
+      "name": "Strategic Consulting",
+      "responsibility": "Business Valuation"
+    },
+    {
+      "id": 14,
+      "name": "Prime Audit Group",
+      "responsibility": "Internal Audit"
+    },
+    {
+      "id": 15,
+      "name": "Empire Accountants",
+      "responsibility": "Forensic Accounting"
+    },
+    {
+      "id": 16,
+      "name": "Global Business Solutions",
+      "responsibility": "International Taxation"
+    },
+    {
+      "id": 17,
+      "name": "Elite Financial Advisors",
+      "responsibility": "Wealth Management"
+    },
+    {
+      "id": 18,
+      "name": "Apex Consultants",
+      "responsibility": "Business Restructuring"
+    },
+    {
+      "id": 19,
+      "name": "Frontier Taxation",
+      "responsibility": "Transfer Pricing"
+    },
+    {
+      "id": 20,
+      "name": "Premier Financials",
+      "responsibility": "Financial Planning"
+    },
+    {
+      "id": 21,
+      "name": "Dynamic Solutions",
+      "responsibility": "Accounting Software"
+    },
+    {
+      "id": 22,
+      "name": "Leading Edge Advisors",
+      "responsibility": "Consulting Services"
+    },
+    {
+      "id": 23,
+      "name": "Liberty Tax Associates",
+      "responsibility": "Tax Return Preparation"
+    },
+    {
+      "id": 24,
+      "name": "Legacy CPAs",
+      "responsibility": "Retirement Planning"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "John Smith",
+      "responsibility": "Accountant",
+      "companyId": 1
+    },
+    {
+      "id": 2,
+      "name": "Sarah Johnson",
+      "responsibility": "Financial Analyst",
+      "companyId": 1
+    },
+    {
+      "id": 3,
+      "name": "Michael Williams",
+      "responsibility": "Tax Consultant",
+      "companyId": 2
+    },
+    {
+      "id": 4,
+      "name": "Jessica Brown",
+      "responsibility": "Auditor",
+      "companyId": 3
+    },
+    {
+      "id": 5,
+      "name": "David Jones",
+      "responsibility": "Bookkeeper",
+      "companyId": 4
+    },
+    {
+      "id": 6,
+      "name": "Emily Davis",
+      "responsibility": "Payroll Specialist",
+      "companyId": 5
+    },
+    {
+      "id": 7,
+      "name": "Daniel Miller",
+      "responsibility": "Financial Planner",
+      "companyId": 6
+    },
+    {
+      "id": 8,
+      "name": "Olivia Wilson",
+      "responsibility": "Risk Analyst",
+      "companyId": 7
+    },
+    {
+      "id": 9,
+      "name": "Alex Taylor",
+      "responsibilidade": "Investment Advisor",
+      "companyId": 8
+    },
+    {
+      "id": 10,
+      "name": "Sophia Anderson",
+      "responsibility": "Business Consultant",
+      "companyId": 9
+    }
+  ]
+}
