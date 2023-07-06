@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import data from '../data.json';
+import './HomePage.css';
 
 interface Company {
   id: number;
@@ -37,11 +38,11 @@ const HomePage: React.FC = () => {
 
   const handleEmployeeResponsibilityChange = (
     employeeId: number,
-    responsibility: string
+    companyId: number
   ) => {
     setEmployees((prevEmployees) =>
       prevEmployees.map((employee) =>
-        employee.id === employeeId ? { ...employee, responsibility } : employee
+        employee.id === employeeId ? { ...employee, companyId } : employee
       )
     );
   };
@@ -61,7 +62,6 @@ const HomePage: React.FC = () => {
           ? { ...employee, responsibility }
           : employee
       )
-
     );
   };
 
@@ -72,13 +72,18 @@ const HomePage: React.FC = () => {
         {companies.map((company) => (
           <li key={company.id}>
             <strong>{company.name}</strong> - {company.responsibility}
-            <input
-              type="text"
+            <select
               value={company.responsibility}
               onChange={(e) =>
                 handleResponsibilityChange(company.id, e.target.value)
               }
-            />
+            >
+              {employees.map((employee) => (
+                <option key={employee.id} value={employee.name}>
+                  {employee.name}
+                </option>
+              ))}
+            </select>
           </li>
         ))}
       </ul>
@@ -88,28 +93,24 @@ const HomePage: React.FC = () => {
         {employees.map((employee) => (
           <li key={employee.id}>
             <strong>{employee.name}</strong> - {employee.responsibility}
-            <input
-              type="text"
-              value={employee.responsibility}
+            <select
+              value={employee.companyId}
               onChange={(e) =>
-                handleEmployeeResponsibilityChange(employee.id, e.target.value)
+                handleEmployeeResponsibilityChange(
+                  employee.id,
+                  parseInt(e.target.value)
+                )
               }
-            />
+            >
+              {companies.map((company) => (
+                <option key={company.id} value={company.id}>
+                  {company.name}
+                </option>
+              ))}
+            </select>
           </li>
         ))}
       </ul>
-
-      <h2>Administrador</h2>
-      <div>
-        <strong>{companies[0]?.name}</strong> - {companies[0]?.responsibility}
-        <input
-          type="text"
-          value={companies[0]?.responsibility}
-          onChange={(e) =>
-            handleAdminResponsibilityChange(companies[0]?.id, e.target.value)
-          }
-        />
-      </div>
     </div>
   );
 };
